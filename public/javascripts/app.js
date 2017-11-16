@@ -6,8 +6,9 @@ angular.module('Bucketlist', [])
     $scope.addItem = function() {
       var newItem = {title:$scope.formContent};
       $scope.formContent='';
-      $http.post('/list', newItem).success(function(data){
+      $http.post('/items', newItem).success(function(data){
         $scope.items.push(data);
+        console.log("Add item worked")
       });
     };
     $scope.getAll = function() {
