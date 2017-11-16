@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-var item = mongoose.model('item');
+var item = mongoose.model('Item');
 
 router.get('/items', function(req, res, next) {
   item.find(function(err, items){
