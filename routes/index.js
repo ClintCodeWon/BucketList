@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-var item = mongoose.model('Item');
+var Item = mongoose.model('Item');
 
 router.get('/items', function(req, res, next) {
-  item.find(function(err, items){
+  Item.find(function(err, items){
     if(err){ return next(err); }
     res.json(items);
   });
