@@ -1,7 +1,8 @@
 <html>
 <head>
   <title>CS 260 Bucketlist</title>
-  <link rel = "stylesheet" href = "style.css">
+  <link rel = "stylesheet" href = "stylesheet/style.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
   <script src="javascripts/app.js"></script>
 
@@ -18,7 +19,7 @@
     <button class = "button button5" type="submit">Add Bucketlist item</button>
   </form>
   <div ng-repeat="item in items">
-    <span ng-click="delete(item)">xxx</span>
+    <span class="glyphicon glyphicon-ok" ng-click="delete(item)"></span>
     {{item.title}}
   </div>
 </div>
