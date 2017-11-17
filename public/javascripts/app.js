@@ -18,7 +18,7 @@ angular.module('Bucketlist', [])
     };
     $scope.getAll();
 
-    $scope.delete = function(items) {
+    $scope.delete = function(item) {
      $http.delete('/items/' + item._id )
        .success(function(data){
          console.log("delete worked");
