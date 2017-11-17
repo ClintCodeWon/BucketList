@@ -1,8 +1,19 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+   background-image: url("https://hdwallsource.com/img/2014/6/skydiving-wallpaper-34794-35598-hd-wallpapers.jpg");
+}
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
 }
 
-a {
-  color: #00B7FF;
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+#input{
+  
 }
