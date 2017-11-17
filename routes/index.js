@@ -36,7 +36,7 @@ router.get('/items/:item', function(req, res) {
 
 router.delete('/items/:item', function(req, res) {
   console.log("in Delete");
-  req.comment.remove();
+  req.item.remove();
   res.sendStatus(200);
 });
 
